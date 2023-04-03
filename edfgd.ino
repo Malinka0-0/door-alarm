@@ -6,16 +6,15 @@
 #include <WiFiUdp.h>
 #include <time.h>
 
-#define User_WiFi_Name "******"  // В " " введіть назву вашої WiFi мережі 
-#define User_WiFi_Password_to_WiFi "*******" // В " " введіть пароль вашої WiFi мережі 
-#define Pin_Info_Led 14 // Номер піна до якого підключено інформаційний світодіод 
-#define Pin_Echo 13 //Номер піна до якого підключено Echo вихід датчика HC-SR04
-#define Pin_Trig 15 //Номер піна до якого підключено Trig вихід датчика HC-SR04
-#define Pin_Button 12 //Номер піна до яокго підключено кнопку 
-#define BotToken "***********" // В " " токен бота в телеграм 
-#define chat_id  "*******" //номер чату для телеграм каналу 
+#define User_WiFi_Name "******"  // In " " enter the name of your WiFi network
+#define User_WiFi_Password_to_WiFi "*******" //  In " " enter the password of your WiFi network 
+#define Pin_Info_Led 14 // Number of the pin to which the information LED is connected  
+#define Pin_Echo 13 //Number of the pin to which the Echo output of the HC-SR04 detector is connected
+#define Pin_Trig 15 //Number of the pin to which the Trig output of the HC-SR04 detector is connected
+#define Pin_Button 12 //Pin number to which the button is connected
+#define BotToken "***********" // Enter " " bot token in Telegram 
+#define chat_id  "*******" //chat id number for the Telegram channel 
  
-
 bool init_security_meaning = true;  
 float security_meamimg;  
 int  buttonPressedTime = 0; 
@@ -32,7 +31,6 @@ UniversalTelegramBot bot(BotToken, client);
 // Налаштуйте NTP
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "ua.pool.ntp.org", 10800); //3600 - 1 Година 
-
 
 void setup() {
   Serial.begin(9600);  
@@ -61,7 +59,6 @@ void setup() {
   timeClient.begin();
   Distance();
   timeClient.update();
-  
   
 }
 
