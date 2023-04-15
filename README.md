@@ -60,7 +60,7 @@ and copy in a new sketch , code from file [edfgd.ico](https://github.com/Malinka
 6. Now let's choose a username for your bot.It must end in 'bot' .
 7. Now you will get message like:Done! Congratulations on your new bot. you will find a link for your telegrambot and token .
 8. Start Conversation to t.me/username by typing hello  
-9. Go to https://api.telegram.org/bot"bot token"/getUpdates and take chat id and find a message like this
+9. Go to https://api.telegram.org/bot"bot_token"/getUpdates and take chat id and find a message like this
 {"id":********,"first_name":"**************","username":"********","type":"private"},"date":***********,"text":"hello"}}]} (***** - some text)
 you need "id":chatid for example "id":12491247 . 12491247 - it's your chat id
   
