@@ -19,7 +19,7 @@ In addition, the microcontroller contains sleep modes that reduce power consumpt
 ---
 Connect the components to the controller ESP8266 like on the [connection diagram](https://github.com/Malinka0-0/door-alarm/blob/main/%D1%81%D1%85%D0%B5%D0%BC%D0%B0.png). <br>
 Make sure the connection is reliable.
-## Step 2 :Install and configurate Arduino IDE
+## Step 2 :Install and configurate Arduino Ide
 ---
 1. Install [Arduino IDE 2.0.4](https://www.arduino.cc/en/software) or another version.
 2. Configure Arduino IDE to work with ESP8266 
